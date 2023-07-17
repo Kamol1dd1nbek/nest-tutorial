@@ -15,4 +15,8 @@ export class AppController {
         return this.appService.getUserId(id);
     }
 
+    @Get("any/:id/:name")
+    getUserByAnyParams(@Param() params: Record<string, string>) {
+        return this.appService.getUserByAnyParams(params);
+    }
 }

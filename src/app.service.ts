@@ -9,4 +9,8 @@ export class AppService {
     getUserId(id: string): string {
         return `Id: ${id}`;
     }
+
+    getUserByAnyParams(params: Record<string, string>): string {
+        return `Id: ${params.id}  |  Name: ${params.Name}`
+    }
 }
