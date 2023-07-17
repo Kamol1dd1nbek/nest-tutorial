@@ -11,6 +11,6 @@ export class AppService {
     }
 
     getUserByAnyParams(params: Record<string, string>): string {
-        return `Id: ${params.id}  |  Name: ${params.Name}`
+        return `Id: ${params.id}  |  Name: ${params.name}`
     }
 }
